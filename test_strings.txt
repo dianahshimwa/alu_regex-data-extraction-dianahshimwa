@@ -1,7 +1,53 @@
-Here are some examples:
-Email: user@example.com, firstname.lastname@company.co.uk
-URL: https://www.example.com, https://subdomain.example.org/page
-Phone: (123) 456-7890, 123-456-7890, 123.456.7890
-Credit Card: 1234-5678-9012-3456, 1234 5678 9012 3456
-Time: 14:30, 2:30 PM
-Price: $19.99, $1,234.56
+# EMAILS
+user@example.com
+firstname.lastname@company.co.uk
+user+filter@sub.example.io
+test_email-123@domain.info
+user@@example..com
+plainaddress
+user@.com
+
+# URLS
+https://www.example.com
+https://subdomain.example.org/page
+http://example.io/test
+htp://example
+www.example
+example_com
+https://example.co
+https://www.example.travel/info
+
+# PHONE NUMBERS
+(123) 456-7890
+123-456-7890
+123.456.7890
+1234567890
++1 (123) 456-7890
+123-45-678
+
+# CREDIT CARDS
+1234 5678 9012 3456
+1234-5678-9012-3456
+0000-1111-2222-3333
+1234567890123456
+1234-5678-9012
+abcd-1234-5678-9012
+
+# TIME
+14:30
+2:30 PM
+23:59
+00:00
+12:60
+25:00
+9:5
+7:30am
+
+# CURRENCY
+$19.99
+$1,234.56
+$100
+$0.99
+$1000000
+$12,34.56
+19.99
