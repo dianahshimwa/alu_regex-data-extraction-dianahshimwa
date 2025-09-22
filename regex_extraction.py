@@ -14,7 +14,17 @@ patterns = {
 with open("test_strings.txt", "r") as f:
     text = f.read()
 
+# Function to find valid and invalid matches
+def extract_matches(pattern, sample_text):
+    all_words = re.findall(r"\S+", sample_text)
+    valid = re.findall(pattern, sample_text)
+    # Invalid = words in text that contain letters/numbers but don’t match regex
+    invalid = [word.strip(",") for word in all_words if word not in valid and any(c.isalnum() for c in word)]
+    return valid, invalid    
+
 # Extraction
 for label, pattern in patterns.items():
-    matches = re.findall(pattern, text)
-    print(f"{label}: {matches}")
+    valid, invalid = extract_matches(pattern, text)
+    print(f"\n=== {label.upper()} ===")
+    print(f"Valid matches ({len(valid)}): {valid}")
+    print(f"Potential invalid or non-matching: {invalid}")
