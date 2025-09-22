@@ -1,12 +1,11 @@
 Regex Data Extraction Project
 
-Overview
-This project extracts structured data (emails, URLs, phone numbers, credit cards, time, and currency amounts) from raw text using Regular Expressions in Python.
+This projects extracts the types of structured data from unstuctured text using python and regex. 
 
 Features
-- Email extraction
-- URL extraction
-- Phone number extraction
-- Credit card number extraction
-- Time extraction (12h/24h format)
-- Currency amount extraction
+- Email extraction: To find the email address in text.
+- URL extraction: Detects website links.
+- Phone number extraction: Gets phone numbers in various formats.
+- Credit card number extraction: Identifies credit card numbers.
+- Time extraction (12h/24h format): Extracts time in both 12-hour and 24-hour formats.
+- Currency amount extraction: Finds monetary values.
